@@ -1,0 +1,4 @@
+{
+  "_readme": "Challenge presets for the Run Customizer and the homepage random challenge. Add more objects to the list.",
+  "presets": [ { "id": "chaos-chaos-detective", "name": "Chaos Chaos Detective Challenge", "description": "Complete a Chaos Chaos Hotel run while attempting to identify all five modifiers." } ]
+}

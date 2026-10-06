@@ -1,0 +1,12 @@
+{
+  "id": "rush",
+  "name": "Rush",
+  "description": "[PLACEHOLDER — add description]",
+  "journalDescription": "[PLACEHOLDER — in-game journal text]",
+  "behavior": "[PLACEHOLDER]",
+  "warningSigns": "[PLACEHOLDER]",
+  "howToSurvive": "[PLACEHOLDER]",
+  "locations": [],
+  "floor": "",
+  "image": "assets/entities/rush.png"
+}

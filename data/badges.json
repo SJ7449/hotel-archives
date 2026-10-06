@@ -1,0 +1,23 @@
+{
+  "_readme": "One object per badge. Do not add hidden badges. Fields: id, name, description, location, image, notes, secret. Set secret:true to draw the dotted ring. Icon image defaults to assets/badges/<id>.png (any shape/size; auto-cropped to a circle); a placeholder shows if the file is missing.",
+  "badges": [
+    {
+      "id": "placeholder-badge",
+      "name": "[PLACEHOLDER BADGE]",
+      "description": "[PLACEHOLDER]",
+      "location": "",
+      "image": null,
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "placeholder-secret-badge",
+      "name": "[PLACEHOLDER SECRET BADGE]",
+      "description": "",
+      "location": "",
+      "image": null,
+      "notes": "",
+      "secret": true
+    }
+  ]
+}

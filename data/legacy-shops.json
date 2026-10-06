@@ -1,0 +1,1 @@
+{ "_readme": "One object per past shop. Fields: date (YYYY-MM-DD), notes, daily (items), featured (items). Same item shape as shops.json.", "shops": [] }

@@ -1,0 +1,6 @@
+{
+  "_readme": "Edit to update the current shop. meta.nextRefresh is an ISO date-time (e.g. 2026-10-06T00:00:00Z) for the countdown; null if unknown. Item fields: id, name, price, description, image.",
+  "meta": { "nextRefresh": null },
+  "daily": [ { "id": "placeholder-daily", "name": "[PLACEHOLDER DAILY ITEM]", "price": null, "description": "[PLACEHOLDER]", "image": null } ],
+  "featured": [ { "id": "placeholder-featured", "name": "[PLACEHOLDER FEATURED ITEM]", "price": null, "description": "[PLACEHOLDER]", "image": null } ]
+}

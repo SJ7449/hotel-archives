@@ -1,0 +1,12 @@
+{
+  "id": "ambush",
+  "name": "Ambush",
+  "description": "[PLACEHOLDER — add description]",
+  "journalDescription": "[PLACEHOLDER — in-game journal text]",
+  "behavior": "[PLACEHOLDER]",
+  "warningSigns": "[PLACEHOLDER]",
+  "howToSurvive": "[PLACEHOLDER]",
+  "locations": [],
+  "floor": "",
+  "image": "assets/entities/ambush.png"
+}

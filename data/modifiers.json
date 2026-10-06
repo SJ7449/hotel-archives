@@ -1,0 +1,39 @@
+{
+  "_readme": "One object per modifier. knobPercent: number (10, -50) or null if unknown. noProgression / noRifts / noKnobs: true shows the matching label (No progression / No Rift / No Knobs); false or null shows nothing. knobCombine at the top: 'additive' (percents are summed) or 'multiplicative' — set this to match how DOORS really stacks Knob modifiers. Delete the EXAMPLE entries once you add real data.",
+  "knobCombine": "additive",
+  "modifiers": [
+    {
+      "id": "placeholder-modifier",
+      "name": "[PLACEHOLDER MODIFIER]",
+      "description": "",
+      "changes": "",
+      "knobPercent": null,
+      "noProgression": null,
+      "noRifts": null,
+      "noKnobs": null,
+      "restrictions": ""
+    },
+    {
+      "id": "example-a",
+      "name": "[EXAMPLE A — DELETE ME]",
+      "description": "Fake entry to test the UI.",
+      "changes": "Nothing (fake).",
+      "knobPercent": 10,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false,
+      "restrictions": ""
+    },
+    {
+      "id": "example-b",
+      "name": "[EXAMPLE B — DELETE ME]",
+      "description": "Fake entry to test the UI.",
+      "changes": "Nothing (fake).",
+      "knobPercent": -50,
+      "noProgression": true,
+      "noRifts": true,
+      "noKnobs": false,
+      "restrictions": "Fake restriction."
+    }
+  ]
+}
