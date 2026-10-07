@@ -1,0 +1,23 @@
+{
+
+"id": "me",
+
+"name": "Me (myself, i)",
+
+"description": "[Me is the entity that is the player. This isn't really much an actual entity, but a character put in the journal for lore purposes.]",
+
+"journalDescription": "[I am me. That's all that's important. Of course I remember my name, but it would be stupid to write it down. It's obvious. Of course I remember.]",
+
+"behavior": "[Unknown]",
+
+"warningSigns": "[Always present in run.]",
+
+"howToSurvive": "[Survive the correspondent floor/sub-floor you are in by dodging all entities that attack and making it past the final door/area.]",
+
+"locations": "[Backdoor, The Hotel, Archives/Rooms, Outdoors, The Mines, Stairwell. And all other visions.]",
+
+"floor": "[Backdoor, The Hotel, Archives/Rooms, Outdoors, The Mines, Stairwell. And all other visions]",
+
+"image": "assets/entities/me.png"
+
+}

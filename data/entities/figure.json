@@ -1,12 +1,23 @@
 {
-  "id": "figure",
-  "name": "Figure",
-  "description": "[PLACEHOLDER — add description]",
-  "journalDescription": "[PLACEHOLDER — in-game journal text]",
-  "behavior": "[PLACEHOLDER]",
-  "warningSigns": "[PLACEHOLDER]",
-  "howToSurvive": "[PLACEHOLDER]",
-  "locations": [],
-  "floor": "",
-  "image": "assets/entities/figure.png"
+
+"id": "figure",
+
+"name": "Figure",
+
+"description": "[PLACEHOLDER — add description]",
+
+"journalDescription": "[Tall, skinny, red creature. Lacks several features- no eyes. No visible ears either, yet has a keen sense of hearing.]",
+
+"behavior": "[High Danger, Mid Intelligence]",
+
+"warningSigns": "[This creature makes a roaring sound when it hears something that angers it. Also this character spawns at Door 50 and 100 in The Hotel, in random rooms within The Mines, and in the Cringle's Workshop vision.]",
+
+"howToSurvive": "[Complete the objective dependent on what room he spawns in, and escape without angering him and getting attacked.]",
+
+"locations": "[The Hotel, The Mines, Cringle's Workshop]",
+
+"floor": "The Hotel, The Mines, Cringle's Workshop",
+
+"image": "assets/entities/figure.webp"
+
 }

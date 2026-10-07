@@ -1,12 +1,23 @@
 {
-  "id": "rush",
-  "name": "Rush",
-  "description": "[PLACEHOLDER — add description]",
-  "journalDescription": "[PLACEHOLDER — in-game journal text]",
-  "behavior": "[PLACEHOLDER]",
-  "warningSigns": "[PLACEHOLDER]",
-  "howToSurvive": "[PLACEHOLDER]",
-  "locations": [],
-  "floor": "",
-  "image": "assets/entities/rush.png"
+
+"id": "rush",
+
+"name": "Rush",  
+
+"description": "[Rush is a hostile entity that attacks by running through rooms checking hiding spots in the rooms he passes by. After it has passed the user's room Rush will leave shortly.]",
+
+"journalDescription": "[Bright green ghostly face. Hiding is important. This thing goes back and forth sometimes to double check hiding spots. Have to make sure I'm ready to hide again, while being careful about the monster in the closet. Ambush is extremely loud and always screaming.]",
+
+"behavior": "[High Danger, Low Intelligence]",
+
+"warningSigns": "[The lights will flicker, or in dark rooms you will need to be careful for his audio.]",
+
+"howToSurvive": "[Once you know Rush is coming, hide in a closet or find a covered enough space of the room that protects you from his attack.]",
+
+"locations": "[The Hotel]",
+
+"floor": "The Hotel",
+
+"image": "assets/entities/Rush.webp"
+
 }
