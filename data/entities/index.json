@@ -1,1 +1,1 @@
-{ "_readme": "List every entity file here. Browsers cannot list folders on static hosting.", "files": ["rush.json", "ambush.json", "figure.json"] }
+{ "_readme": "List every entity file here. Browsers cannot list folders on static hosting.", "files": ["rush.json", "ambush.json", "figure.json", "me.json"] }
