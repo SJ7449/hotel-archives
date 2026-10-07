@@ -1,39 +1,816 @@
 {
-  "_readme": "One object per modifier. knobPercent: number (10, -50) or null if unknown. noProgression / noRifts / noKnobs: true shows the matching label (No progression / No Rift / No Knobs); false or null shows nothing. knobCombine at the top: 'additive' (percents are summed) or 'multiplicative' — set this to match how DOORS really stacks Knob modifiers. Delete the EXAMPLE entries once you add real data.",
+  "_readme": "One object per modifier. knobPercent is taken directly from the supplied Markdown/PDF. Description and changes are left blank because the supplied source lists modifier names, percentages, and special labels but does not provide their gameplay descriptions. noProgression / noRifts / noKnobs reflect the labels explicitly present in the source.",
   "knobCombine": "additive",
   "modifiers": [
     {
-      "id": "placeholder-modifier",
-      "name": "[PLACEHOLDER MODIFIER]",
+      "id": "admin-panel",
+      "name": "ADMIN PANEL",
       "description": "",
       "changes": "",
       "knobPercent": null,
-      "noProgression": null,
-      "noRifts": null,
-      "noKnobs": null,
-      "restrictions": ""
+      "noProgression": true,
+      "noRifts": true,
+      "noKnobs": true
     },
     {
-      "id": "example-a",
-      "name": "[EXAMPLE A — DELETE ME]",
-      "description": "Fake entry to test the UI.",
-      "changes": "Nothing (fake).",
-      "knobPercent": 10,
-      "noProgression": false,
-      "noRifts": false,
-      "noKnobs": false,
-      "restrictions": ""
-    },
-    {
-      "id": "example-b",
-      "name": "[EXAMPLE B — DELETE ME]",
-      "description": "Fake entry to test the UI.",
-      "changes": "Nothing (fake).",
+      "id": "random-events",
+      "name": "RANDOM EVENTS",
+      "description": "",
+      "changes": "",
       "knobPercent": -50,
       "noProgression": true,
       "noRifts": true,
-      "noKnobs": false,
-      "restrictions": "Fake restriction."
+      "noKnobs": false
+    },
+    {
+      "id": "custom-seed",
+      "name": "CUSTOM SEED",
+      "description": "",
+      "changes": "",
+      "knobPercent": -999,
+      "noProgression": true,
+      "noRifts": true,
+      "noKnobs": false
+    },
+    {
+      "id": "voice-acting",
+      "name": "Voice Acting",
+      "description": "",
+      "changes": "",
+      "knobPercent": -20,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "uh-oh",
+      "name": "Uh Oh",
+      "description": "",
+      "changes": "",
+      "knobPercent": 10,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "how-unfortunate",
+      "name": "How Unfortunate",
+      "description": "",
+      "changes": "",
+      "knobPercent": 30,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "chaos-chaos",
+      "name": "Chaos, Chaos",
+      "description": "",
+      "changes": "",
+      "knobPercent": 50,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "electrical-work",
+      "name": "Electrical Work",
+      "description": "",
+      "changes": "",
+      "knobPercent": 10,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "bad-electrical-work",
+      "name": "Bad Electrical Work",
+      "description": "",
+      "changes": "",
+      "knobPercent": 10,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "power-shortage",
+      "name": "Power Shortage",
+      "description": "",
+      "changes": "",
+      "knobPercent": 15,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "lights-out",
+      "name": "Lights Out",
+      "description": "",
+      "changes": "",
+      "knobPercent": 25,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "el-goblino-was-here",
+      "name": "El Goblino Was Here",
+      "description": "",
+      "changes": "",
+      "knobPercent": 5,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "el-goblino-s-payday",
+      "name": "El Goblino’s Payday",
+      "description": "",
+      "changes": "",
+      "knobPercent": 15,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "more-stuff",
+      "name": "More Stuff",
+      "description": "",
+      "changes": "",
+      "knobPercent": -50,
+      "noProgression": false,
+      "noRifts": true,
+      "noKnobs": false
+    },
+    {
+      "id": "less-stuff",
+      "name": "Less Stuff",
+      "description": "",
+      "changes": "",
+      "knobPercent": 5,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "out-of-stuff",
+      "name": "Out Of Stuff",
+      "description": "",
+      "changes": "",
+      "knobPercent": 15,
+      "noProgression": false,
+      "noRifts": true,
+      "noKnobs": false
+    },
+    {
+      "id": "wear-and-tear",
+      "name": "Wear And Tear",
+      "description": "",
+      "changes": "",
+      "knobPercent": 5,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "small-hands",
+      "name": "Small Hands",
+      "description": "",
+      "changes": "",
+      "knobPercent": 5,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "baby-hands",
+      "name": "Baby Hands",
+      "description": "",
+      "changes": "",
+      "knobPercent": 10,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "gone-fishing",
+      "name": "Gone Fishing",
+      "description": "",
+      "changes": "",
+      "knobPercent": 5,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "soundproofing",
+      "name": "Soundproofing",
+      "description": "",
+      "changes": "",
+      "knobPercent": 5,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "wet-floor",
+      "name": "Wet Floor",
+      "description": "",
+      "changes": "",
+      "knobPercent": 10,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "bad-ventilation",
+      "name": "Bad Ventilation",
+      "description": "",
+      "changes": "",
+      "knobPercent": 10,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "locked-and-loaded",
+      "name": "Locked and Loaded",
+      "description": "",
+      "changes": "",
+      "knobPercent": 5,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "key-key-key-key",
+      "name": "Key Key Key Key",
+      "description": "",
+      "changes": "",
+      "knobPercent": 10,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "smelt-it",
+      "name": "Smelt It",
+      "description": "",
+      "changes": "",
+      "knobPercent": 5,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "dealt-it",
+      "name": "Dealt It",
+      "description": "",
+      "changes": "",
+      "knobPercent": 15,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "nowhere-to-hide",
+      "name": "Nowhere To Hide",
+      "description": "",
+      "changes": "",
+      "knobPercent": 10,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "jammin",
+      "name": "Jammin’",
+      "description": "",
+      "changes": "",
+      "knobPercent": 15,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "tripped",
+      "name": "Tripped",
+      "description": "",
+      "changes": "",
+      "knobPercent": 5,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "tripped-and-fell",
+      "name": "Tripped and Fell",
+      "description": "",
+      "changes": "",
+      "knobPercent": 10,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "last-few-breaths",
+      "name": "Last Few Breaths",
+      "description": "",
+      "changes": "",
+      "knobPercent": 15,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "last-breath",
+      "name": "Last Breath",
+      "description": "",
+      "changes": "",
+      "knobPercent": 20,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "didn-t-skip-leg-day",
+      "name": "Didn’t Skip Leg Day",
+      "description": "",
+      "changes": "",
+      "knobPercent": -50,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "faster-faster-faster",
+      "name": "Faster, Faster, Faster",
+      "description": "",
+      "changes": "",
+      "knobPercent": -75,
+      "noProgression": true,
+      "noRifts": true,
+      "noKnobs": false
+    },
+    {
+      "id": "maximum-overdrive",
+      "name": "MAXIMUM OVERDRIVE",
+      "description": "",
+      "changes": "",
+      "knobPercent": -125,
+      "noProgression": true,
+      "noRifts": true,
+      "noKnobs": false
+    },
+    {
+      "id": "my-knees-are-killing-me",
+      "name": "My Knees Are Killing Me",
+      "description": "",
+      "changes": "",
+      "knobPercent": 5,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "my-legs-are-killing-me",
+      "name": "My Legs Are Killing Me",
+      "description": "",
+      "changes": "",
+      "knobPercent": 10,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "injuries",
+      "name": "Injuries",
+      "description": "",
+      "changes": "",
+      "knobPercent": 5,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "good-time",
+      "name": "Good Time",
+      "description": "",
+      "changes": "",
+      "knobPercent": -50,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "bad-time",
+      "name": "Bad Time",
+      "description": "",
+      "changes": "",
+      "knobPercent": 10,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "really-bad-time",
+      "name": "Really Bad Time",
+      "description": "",
+      "changes": "",
+      "knobPercent": 20,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "worst-time-ever",
+      "name": "Worst Time Ever",
+      "description": "",
+      "changes": "",
+      "knobPercent": 25,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "rush-hour",
+      "name": "Rush Hour",
+      "description": "",
+      "changes": "",
+      "knobPercent": 10,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "i-m-runnin-here",
+      "name": "I’m Runnin’ Here",
+      "description": "",
+      "changes": "",
+      "knobPercent": 10,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "i-m-tip-toein-here",
+      "name": "I’m Tip-Toein’ Here",
+      "description": "",
+      "changes": "",
+      "knobPercent": 10,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "rush-around",
+      "name": "Rush Around",
+      "description": "",
+      "changes": "",
+      "knobPercent": 5,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "wrong-number",
+      "name": "Wrong Number",
+      "description": "",
+      "changes": "",
+      "knobPercent": 5,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "battle-of-wits",
+      "name": "Battle Of Wits",
+      "description": "",
+      "changes": "",
+      "knobPercent": 15,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "i-m-everywhere",
+      "name": "I’m Everywhere",
+      "description": "",
+      "changes": "",
+      "knobPercent": 5,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "think-fast",
+      "name": "Think Fast",
+      "description": "",
+      "changes": "",
+      "knobPercent": 5,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "think-faster",
+      "name": "Think Faster",
+      "description": "",
+      "changes": "",
+      "knobPercent": 10,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "bug-spray",
+      "name": "Bug Spray",
+      "description": "",
+      "changes": "",
+      "knobPercent": -10,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "itchy",
+      "name": "Itchy",
+      "description": "",
+      "changes": "",
+      "knobPercent": 5,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "nosey",
+      "name": "Nosey",
+      "description": "",
+      "changes": "",
+      "knobPercent": 5,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "always-watching",
+      "name": "Always Watching",
+      "description": "",
+      "changes": "",
+      "knobPercent": 10,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "seeing-double",
+      "name": "Seeing Double",
+      "description": "",
+      "changes": "",
+      "knobPercent": 15,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "four-eyes",
+      "name": "Four Eyes",
+      "description": "",
+      "changes": "",
+      "knobPercent": 20,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "every-angle",
+      "name": "Every Angle",
+      "description": "",
+      "changes": "",
+      "knobPercent": 5,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "come-back-here",
+      "name": "Come Back Here",
+      "description": "",
+      "changes": "",
+      "knobPercent": 5,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "back-for-seconds",
+      "name": "Back For Seconds",
+      "description": "",
+      "changes": "",
+      "knobPercent": 10,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "afterimage",
+      "name": "Afterimage",
+      "description": "",
+      "changes": "",
+      "knobPercent": 10,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "new-roommate",
+      "name": "New Roommate",
+      "description": "",
+      "changes": "",
+      "knobPercent": 5,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "rent-s-due",
+      "name": "Rent’s Due",
+      "description": "",
+      "changes": "",
+      "knobPercent": 15,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "run-from-it",
+      "name": "Run From It",
+      "description": "",
+      "changes": "",
+      "knobPercent": 5,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "destiny-still-arrives",
+      "name": "Destiny Still Arrives",
+      "description": "",
+      "changes": "",
+      "knobPercent": 10,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "haha",
+      "name": "Haha",
+      "description": "",
+      "changes": "",
+      "knobPercent": 5,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "laughing-stock",
+      "name": "Laughing Stock",
+      "description": "",
+      "changes": "",
+      "knobPercent": 10,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "no-laughing-matter",
+      "name": "No Laughing Matter",
+      "description": "",
+      "changes": "",
+      "knobPercent": 15,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "dripped-out",
+      "name": "Dripped Out",
+      "description": "",
+      "changes": "",
+      "knobPercent": 5,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "infested",
+      "name": "Infested",
+      "description": "",
+      "changes": "",
+      "knobPercent": 5,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "bug-problem",
+      "name": "Bug Problem",
+      "description": "",
+      "changes": "",
+      "knobPercent": 10,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "watch-your-step",
+      "name": "Watch Your Step",
+      "description": "",
+      "changes": "",
+      "knobPercent": 5,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "are-those-pancakes",
+      "name": "Are Those Pancakes?!",
+      "description": "",
+      "changes": "",
+      "knobPercent": 10,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "i-love-pancakes",
+      "name": "I Love Pancakes",
+      "description": "",
+      "changes": "",
+      "knobPercent": 15,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "stop-right-then",
+      "name": "Stop Right Then",
+      "description": "",
+      "changes": "",
+      "knobPercent": 15,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "room-for-more",
+      "name": "Room For More",
+      "description": "",
+      "changes": "",
+      "knobPercent": 20,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "blitz-oh",
+      "name": "Blitz, Oh",
+      "description": "",
+      "changes": "",
+      "knobPercent": 5,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "look-man",
+      "name": "Look, Man",
+      "description": "",
+      "changes": "",
+      "knobPercent": 10,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "vacuum-sealed",
+      "name": "Vacuum Sealed",
+      "description": "",
+      "changes": "",
+      "knobPercent": 10,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
+    },
+    {
+      "id": "make-haste",
+      "name": "Make Haste",
+      "description": "",
+      "changes": "",
+      "knobPercent": 25,
+      "noProgression": false,
+      "noRifts": false,
+      "noKnobs": false
     }
   ]
 }

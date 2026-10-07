@@ -21,8 +21,7 @@
   const ok = m => ({ all: 1, pos: m.knobPercent > 0, neg: m.knobPercent < 0, prog: m.noProgression, rift: m.noRifts, knob: m.noKnobs }[flt]) &&
     `${m.name} ${m.description} ${m.changes}`.toLowerCase().includes(q);
   const detail = m => !m ? '<p class="muted">Hover or select a modifier to see its details.</p>' : `<h3>${e(m.name)}</h3><div>${tags(m)}</div>
-    <h4>Description</h4><p>${F(m.description)}</p><h4>What it changes</h4><p>${F(m.changes)}</p><h4>Restrictions</h4><p>${F(m.restrictions)}</p>
-    <p class="mono">Knob modifier: ${typeof m.knobPercent === 'number' ? m.knobPercent + '%' : 'unknown'}</p>`;
+    <h4>Description</h4><p>${F(m.description)}</p><h4>What it changes</h4><p>${F(m.changes)}</p><p class="mono">Knob modifier: ${typeof m.knobPercent === 'number' ? m.knobPercent + '%' : 'unknown'}</p>`;
   const list = () => App.data.modifiers.filter(ok).map(m => `<button class="mod${sel.has(m.id) ? ' on' : ''}" data-id="${e(m.id)}" aria-pressed="${sel.has(m.id)}">
     <strong>${e(m.name)}</strong><span>${tags(m)}</span></button>`).join('') || '<p class="muted">No matching modifiers.</p>';
   const bar = () => { const k = App.knobTotal([...sel]);
