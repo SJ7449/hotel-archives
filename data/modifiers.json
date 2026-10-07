@@ -10,7 +10,8 @@
       "knobPercent": null,
       "noProgression": true,
       "noRifts": true,
-      "noKnobs": true
+      "noKnobs": true,
+      "section": null
     },
     {
       "id": "random-events",
@@ -20,7 +21,8 @@
       "knobPercent": -50,
       "noProgression": true,
       "noRifts": true,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": null
     },
     {
       "id": "custom-seed",
@@ -30,7 +32,8 @@
       "knobPercent": -999,
       "noProgression": true,
       "noRifts": true,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": null
     },
     {
       "id": "voice-acting",
@@ -40,7 +43,8 @@
       "knobPercent": -20,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": null
     },
     {
       "id": "uh-oh",
@@ -50,7 +54,8 @@
       "knobPercent": 10,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "rng"
     },
     {
       "id": "how-unfortunate",
@@ -60,7 +65,8 @@
       "knobPercent": 30,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "rng"
     },
     {
       "id": "chaos-chaos",
@@ -70,7 +76,8 @@
       "knobPercent": 50,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "rng"
     },
     {
       "id": "electrical-work",
@@ -80,7 +87,8 @@
       "knobPercent": 10,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "electrical"
     },
     {
       "id": "bad-electrical-work",
@@ -90,7 +98,8 @@
       "knobPercent": 10,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "electrical"
     },
     {
       "id": "power-shortage",
@@ -100,7 +109,8 @@
       "knobPercent": 15,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "electrical"
     },
     {
       "id": "lights-out",
@@ -110,7 +120,8 @@
       "knobPercent": 25,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "electrical"
     },
     {
       "id": "el-goblino-was-here",
@@ -120,7 +131,8 @@
       "knobPercent": 5,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "el_goblino"
     },
     {
       "id": "el-goblino-s-payday",
@@ -130,7 +142,8 @@
       "knobPercent": 15,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "el_goblino"
     },
     {
       "id": "more-stuff",
@@ -140,7 +153,8 @@
       "knobPercent": -50,
       "noProgression": false,
       "noRifts": true,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "items"
     },
     {
       "id": "less-stuff",
@@ -150,7 +164,8 @@
       "knobPercent": 5,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "items"
     },
     {
       "id": "out-of-stuff",
@@ -160,7 +175,8 @@
       "knobPercent": 15,
       "noProgression": false,
       "noRifts": true,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "items"
     },
     {
       "id": "wear-and-tear",
@@ -170,7 +186,8 @@
       "knobPercent": 5,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "items"
     },
     {
       "id": "small-hands",
@@ -180,7 +197,8 @@
       "knobPercent": 5,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "hands"
     },
     {
       "id": "baby-hands",
@@ -190,7 +208,8 @@
       "knobPercent": 10,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "hands"
     },
     {
       "id": "gone-fishing",
@@ -200,7 +219,8 @@
       "knobPercent": 5,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": null
     },
     {
       "id": "soundproofing",
@@ -210,7 +230,8 @@
       "knobPercent": 5,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": null
     },
     {
       "id": "wet-floor",
@@ -220,7 +241,8 @@
       "knobPercent": 10,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": null
     },
     {
       "id": "bad-ventilation",
@@ -230,7 +252,8 @@
       "knobPercent": 10,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": null
     },
     {
       "id": "locked-and-loaded",
@@ -240,7 +263,8 @@
       "knobPercent": 5,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "keys"
     },
     {
       "id": "key-key-key-key",
@@ -250,7 +274,8 @@
       "knobPercent": 10,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "keys"
     },
     {
       "id": "smelt-it",
@@ -260,7 +285,8 @@
       "knobPercent": 5,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "firedamp"
     },
     {
       "id": "dealt-it",
@@ -270,7 +296,8 @@
       "knobPercent": 15,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "firedamp"
     },
     {
       "id": "nowhere-to-hide",
@@ -280,7 +307,8 @@
       "knobPercent": 10,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": null
     },
     {
       "id": "jammin",
@@ -290,7 +318,8 @@
       "knobPercent": 15,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": null
     },
     {
       "id": "tripped",
@@ -300,7 +329,8 @@
       "knobPercent": 5,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "tripping"
     },
     {
       "id": "tripped-and-fell",
@@ -310,7 +340,8 @@
       "knobPercent": 10,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "tripping"
     },
     {
       "id": "last-few-breaths",
@@ -320,7 +351,8 @@
       "knobPercent": 15,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "health"
     },
     {
       "id": "last-breath",
@@ -330,7 +362,8 @@
       "knobPercent": 20,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "health"
     },
     {
       "id": "didn-t-skip-leg-day",
@@ -340,7 +373,8 @@
       "knobPercent": -50,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "movement"
     },
     {
       "id": "faster-faster-faster",
@@ -350,7 +384,8 @@
       "knobPercent": -75,
       "noProgression": true,
       "noRifts": true,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "movement"
     },
     {
       "id": "maximum-overdrive",
@@ -360,7 +395,8 @@
       "knobPercent": -125,
       "noProgression": true,
       "noRifts": true,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "movement"
     },
     {
       "id": "my-knees-are-killing-me",
@@ -370,7 +406,8 @@
       "knobPercent": 5,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "movement"
     },
     {
       "id": "my-legs-are-killing-me",
@@ -380,7 +417,8 @@
       "knobPercent": 10,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "movement"
     },
     {
       "id": "injuries",
@@ -390,7 +428,8 @@
       "knobPercent": 5,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": null
     },
     {
       "id": "good-time",
@@ -400,7 +439,8 @@
       "knobPercent": -50,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "time"
     },
     {
       "id": "bad-time",
@@ -410,7 +450,8 @@
       "knobPercent": 10,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "time"
     },
     {
       "id": "really-bad-time",
@@ -420,7 +461,8 @@
       "knobPercent": 20,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "time"
     },
     {
       "id": "worst-time-ever",
@@ -430,7 +472,8 @@
       "knobPercent": 25,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "time"
     },
     {
       "id": "rush-hour",
@@ -440,7 +483,8 @@
       "knobPercent": 10,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": null
     },
     {
       "id": "i-m-runnin-here",
@@ -450,7 +494,8 @@
       "knobPercent": 10,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": null
     },
     {
       "id": "i-m-tip-toein-here",
@@ -460,7 +505,8 @@
       "knobPercent": 10,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": null
     },
     {
       "id": "rush-around",
@@ -470,7 +516,8 @@
       "knobPercent": 5,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": null
     },
     {
       "id": "wrong-number",
@@ -480,7 +527,8 @@
       "knobPercent": 5,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "battle_of_wits"
     },
     {
       "id": "battle-of-wits",
@@ -490,7 +538,8 @@
       "knobPercent": 15,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "battle_of_wits"
     },
     {
       "id": "i-m-everywhere",
@@ -500,7 +549,8 @@
       "knobPercent": 5,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": null
     },
     {
       "id": "think-fast",
@@ -510,7 +560,8 @@
       "knobPercent": 5,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "think_fast"
     },
     {
       "id": "think-faster",
@@ -520,7 +571,8 @@
       "knobPercent": 10,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "think_fast"
     },
     {
       "id": "bug-spray",
@@ -530,7 +582,8 @@
       "knobPercent": -10,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "bugs"
     },
     {
       "id": "itchy",
@@ -540,7 +593,8 @@
       "knobPercent": 5,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "bugs"
     },
     {
       "id": "nosey",
@@ -550,7 +604,8 @@
       "knobPercent": 5,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "eyes"
     },
     {
       "id": "always-watching",
@@ -560,7 +615,8 @@
       "knobPercent": 10,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "eyes"
     },
     {
       "id": "seeing-double",
@@ -570,7 +626,8 @@
       "knobPercent": 15,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "eyes"
     },
     {
       "id": "four-eyes",
@@ -580,7 +637,8 @@
       "knobPercent": 20,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "eyes"
     },
     {
       "id": "every-angle",
@@ -590,7 +648,8 @@
       "knobPercent": 5,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": null
     },
     {
       "id": "come-back-here",
@@ -600,7 +659,8 @@
       "knobPercent": 5,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": null
     },
     {
       "id": "back-for-seconds",
@@ -610,7 +670,8 @@
       "knobPercent": 10,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": null
     },
     {
       "id": "afterimage",
@@ -620,7 +681,8 @@
       "knobPercent": 10,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": null
     },
     {
       "id": "new-roommate",
@@ -630,7 +692,8 @@
       "knobPercent": 5,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": null
     },
     {
       "id": "rent-s-due",
@@ -640,7 +703,8 @@
       "knobPercent": 15,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": null
     },
     {
       "id": "run-from-it",
@@ -650,7 +714,8 @@
       "knobPercent": 5,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "entity"
     },
     {
       "id": "destiny-still-arrives",
@@ -660,7 +725,8 @@
       "knobPercent": 10,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "entity"
     },
     {
       "id": "haha",
@@ -670,7 +736,8 @@
       "knobPercent": 5,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "laughter"
     },
     {
       "id": "laughing-stock",
@@ -680,7 +747,8 @@
       "knobPercent": 10,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "laughter"
     },
     {
       "id": "no-laughing-matter",
@@ -690,7 +758,8 @@
       "knobPercent": 15,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "laughter"
     },
     {
       "id": "dripped-out",
@@ -700,7 +769,8 @@
       "knobPercent": 5,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "laughter"
     },
     {
       "id": "infested",
@@ -710,7 +780,8 @@
       "knobPercent": 5,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "bugs"
     },
     {
       "id": "bug-problem",
@@ -720,7 +791,8 @@
       "knobPercent": 10,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "bugs"
     },
     {
       "id": "watch-your-step",
@@ -730,7 +802,8 @@
       "knobPercent": 5,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "pancakes"
     },
     {
       "id": "are-those-pancakes",
@@ -740,7 +813,8 @@
       "knobPercent": 10,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "pancakes"
     },
     {
       "id": "i-love-pancakes",
@@ -750,7 +824,8 @@
       "knobPercent": 15,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": "pancakes"
     },
     {
       "id": "stop-right-then",
@@ -760,7 +835,8 @@
       "knobPercent": 15,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": null
     },
     {
       "id": "room-for-more",
@@ -770,7 +846,8 @@
       "knobPercent": 20,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": null
     },
     {
       "id": "blitz-oh",
@@ -780,7 +857,8 @@
       "knobPercent": 5,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": null
     },
     {
       "id": "look-man",
@@ -790,7 +868,8 @@
       "knobPercent": 10,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": null
     },
     {
       "id": "vacuum-sealed",
@@ -800,7 +879,8 @@
       "knobPercent": 10,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": null
     },
     {
       "id": "make-haste",
@@ -810,7 +890,8 @@
       "knobPercent": 25,
       "noProgression": false,
       "noRifts": false,
-      "noKnobs": false
+      "noKnobs": false,
+      "section": null
     }
   ]
 }
