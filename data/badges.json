@@ -1,22 +1,1543 @@
 {
-  "_readme": "One object per badge. Do not add hidden badges. Fields: id, name, description, location, image, notes, secret. Set secret:true to draw the dotted ring. Icon image defaults to assets/badges/<id>.png (any shape/size; auto-cropped to a circle); a placeholder shows if the file is missing.",
+  "_readme": "One object per badge. No hidden or placeholder badges. Fields: id, name, description, location, image, notes, secret. Image paths use assets/badges/<id>. secret:true means the badge is secret in-game. notes records unobtainable status or information that may need verification.",
   "badges": [
     {
-      "id": "placeholder-badge",
-      "name": "[PLACEHOLDER BADGE]",
-      "description": "[PLACEHOLDER]",
-      "location": "",
-      "image": null,
+      "id": "welcome",
+      "name": "Welcome",
+      "description": "Join DOORS for the first time.",
+      "location": "Lobby",
+      "image": "assets/badges/welcome",
       "notes": "",
       "secret": false
     },
     {
-      "id": "placeholder-secret-badge",
-      "name": "[PLACEHOLDER SECRET BADGE]",
-      "description": "",
-      "location": "",
-      "image": null,
+      "id": "groupmember",
+      "name": "Group Member",
+      "description": "Join the LSPLASH Roblox group to receive this badge.",
+      "location": "Lobby / Roblox group",
+      "image": "assets/badges/groupmember",
       "notes": "",
+      "secret": false
+    },
+    {
+      "id": "buddysystem",
+      "name": "Buddy System",
+      "description": "Complete a run while playing with another player.",
+      "location": "Any main floor",
+      "image": "assets/badges/buddysystem",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "backfromthedead",
+      "name": "Back From The Dead",
+      "description": "Use a revive after dying.",
+      "location": "Any floor",
+      "image": "assets/badges/backfromthedead",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "inplainsight",
+      "name": "In Plain Sight",
+      "description": "Hide from an entity without using a normal hiding spot.",
+      "location": "Any main floor",
+      "image": "assets/badges/inplainsight",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "oneofmany",
+      "name": "One Of Many",
+      "description": "Encounter your first death.",
+      "location": "Any floor",
+      "image": "assets/badges/oneofmany",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "pickingflowers",
+      "name": "Picking Flowers",
+      "description": "Have Grampy create a Lotus from eight Lotus Petals.",
+      "location": "The Outdoors",
+      "image": "assets/badges/pickingflowers",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "rebirth",
+      "name": "Rebirth",
+      "description": "Use a Lotus to become reborn after dying.",
+      "location": "Any floor with a Lotus",
+      "image": "assets/badges/rebirth",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "interconnected",
+      "name": "Interconnected",
+      "description": "Store a major item inside a Rift.",
+      "location": "Any main floor",
+      "image": "assets/badges/interconnected",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "lostintranslation",
+      "name": "Lost In Translation",
+      "description": "Transform an item inside a Rift.",
+      "location": "Any main floor",
+      "image": "assets/badges/lostintranslation",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "herbofviridis",
+      "name": "Herb Of Viridis",
+      "description": "Find and use the Green Herb in the Infirmary subroom.",
+      "location": "The Hotel",
+      "image": "assets/badges/herbofviridis",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "experttechnician",
+      "name": "Expert Technician",
+      "description": "Complete the Hotel breaker puzzle in under one minute.",
+      "location": "The Hotel, Door 100",
+      "image": "assets/badges/experttechnician",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "whoeversmeltit",
+      "name": "Whoever Smelt It",
+      "description": "Survive a Firedamp leak.",
+      "location": "The Mines",
+      "image": "assets/badges/whoeversmeltit",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "trespassing",
+      "name": "Trespassing",
+      "description": "Activate all anchors in the Nest and escape.",
+      "location": "The Mines, Door 150",
+      "image": "assets/badges/trespassing",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "runningtrack",
+      "name": "Running Track",
+      "description": "Escape Seek during the Mines chase.",
+      "location": "The Mines",
+      "image": "assets/badges/runningtrack",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "downthedrain",
+      "name": "Down The Drain",
+      "description": "Complete the Seek encounter in the Dam.",
+      "location": "The Mines, Door 200",
+      "image": "assets/badges/downthedrain",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "welcomeback",
+      "name": "Welcome Back",
+      "description": "Join another day after previously playing DOORS.",
+      "location": "Lobby",
+      "image": "assets/badges/welcomeback",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "betrayal",
+      "name": "Betrayal",
+      "description": "Steal a hiding spot from a player immediately before they die.",
+      "location": "Any floor",
+      "image": "assets/badges/betrayal",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "tenofmany",
+      "name": "Ten Of Many",
+      "description": "Encounter your tenth death.",
+      "location": "Any floor",
+      "image": "assets/badges/tenofmany",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "hundredofmany",
+      "name": "Hundred Of Many",
+      "description": "Encounter your hundredth death.",
+      "location": "Any floor",
+      "image": "assets/badges/hundredofmany",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "feedthebirds",
+      "name": "Feed the Birds",
+      "description": "Feed Bread to a Caw.",
+      "location": "The Outdoors",
+      "image": "assets/badges/feedthebirds",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "unpatcheddupeglitch",
+      "name": "Unpatched Dupe Glitch",
+      "description": "Use a scanner to scan and print an item.",
+      "location": "The Archives",
+      "image": "assets/badges/unpatcheddupeglitch",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "quickpurchase",
+      "name": "Quick Purchase",
+      "description": "Use loose change to purchase a Shakelight.",
+      "location": "The Archives",
+      "image": "assets/badges/quickpurchase",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "patience",
+      "name": "Patience",
+      "description": "Walk through the entire Teller queue in The Archives.",
+      "location": "The Archives",
+      "image": "assets/badges/patience",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "missionsuccessful",
+      "name": "Mission Successful",
+      "description": "Flush a toilet, turn on a sink, then use an air dryer in that order.",
+      "location": "The Archives",
+      "image": "assets/badges/missionsuccessful",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "paperclipchallenge",
+      "name": "Paperclip Challenge",
+      "description": "Use a Depot to earn Gold.",
+      "location": "The Stairwell",
+      "image": "assets/badges/paperclipchallenge",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "rageroom",
+      "name": "Rage Room",
+      "description": "Successfully disable Noise.",
+      "location": "The Stairwell",
+      "image": "assets/badges/rageroom",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "friedmushrooms",
+      "name": "Fried Mushrooms",
+      "description": "Use a Fire Alarm to incinerate Meld.",
+      "location": "The Stairwell",
+      "image": "assets/badges/friedmushrooms",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "redacted",
+      "name": "REDACTED",
+      "description": "Watch and create a new entity by completing the Ransom/Noise sequence.",
+      "location": "The Archives / The Stairwell",
+      "image": "assets/badges/redacted",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "grindset",
+      "name": "Grindset",
+      "description": "Grind Salvage into Scrap using a Depot.",
+      "location": "The Stairwell",
+      "image": "assets/badges/grindset",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "garagesale",
+      "name": "Garage Sale",
+      "description": "Use a Garage Key to open a garage.",
+      "location": "The Stairwell",
+      "image": "assets/badges/garagesale",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "clayworld",
+      "name": "Clay World",
+      "description": "Scrap a Ceramic Stem.",
+      "location": "The Stairwell",
+      "image": "assets/badges/clayworld",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "dusttodust",
+      "name": "Dust To Dust",
+      "description": "Obtain Stardust by processing a Starlight item in a Scrapper.",
+      "location": "The Stairwell",
+      "image": "assets/badges/dusttodust",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "secondwind",
+      "name": "Second Wind",
+      "description": "Survive damage that would otherwise kill you.",
+      "location": "The Backdoor",
+      "image": "assets/badges/secondwind",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "qatester",
+      "name": "QA Tester",
+      "description": "Participate in DOORS testing content.",
+      "location": "Developer/testing access",
+      "image": "assets/badges/qatester",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "contentcreator",
+      "name": "Content Creator",
+      "description": "Become part of the DOORS Content Creator program.",
+      "location": "Outside the game / Creator program",
+      "image": "assets/badges/contentcreator",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "outofmyway",
+      "name": "Out Of My Way",
+      "description": "Survive an encounter with Rush.",
+      "location": "The Hotel / The Mines",
+      "image": "assets/badges/outofmyway",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "youcanrun",
+      "name": "You Can Run",
+      "description": "Successfully complete a Seek chase.",
+      "location": "The Hotel / The Mines",
+      "image": "assets/badges/youcanrun",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "iseeyou",
+      "name": "I See You",
+      "description": "Dodge Screech's attack.",
+      "location": "Dark rooms in The Hotel / The Mines",
+      "image": "assets/badges/iseeyou",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "wrongroom",
+      "name": "Wrong Room",
+      "description": "Get caught by Dupe.",
+      "location": "The Hotel / The Mines",
+      "image": "assets/badges/wrongroom",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "lookatme",
+      "name": "Look At Me",
+      "description": "Survive an encounter with Eyes.",
+      "location": "The Hotel / The Mines",
+      "image": "assets/badges/lookatme",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "evictionnotice",
+      "name": "Eviction Notice",
+      "description": "Get pushed out of a hiding spot by Hide.",
+      "location": "The Hotel / The Mines",
+      "image": "assets/badges/evictionnotice",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "deadofnight",
+      "name": "Dead Of Night",
+      "description": "Survive Dread.",
+      "location": "Any applicable floor",
+      "image": "assets/badges/deadofnight",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "rebound",
+      "name": "Rebound",
+      "description": "Survive Ambush.",
+      "location": "The Hotel / The Mines",
+      "image": "assets/badges/rebound",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "twostepsforward",
+      "name": "Two Steps Forward",
+      "description": "Survive Halt.",
+      "location": "The Hotel",
+      "image": "assets/badges/twostepsforward",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "playtime",
+      "name": "Playtime",
+      "description": "Give Sally a non-Crucifix item.",
+      "location": "The Hotel",
+      "image": "assets/badges/playtime",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "idontbelievemyeyes",
+      "name": "I Don't Believe My Eyes",
+      "description": "Survive a swarm of Gloombats.",
+      "location": "The Mines",
+      "image": "assets/badges/idontbelievemyeyes",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "justaprank",
+      "name": "Just A Prank",
+      "description": "Survive Giggle.",
+      "location": "The Mines",
+      "image": "assets/badges/justaprank",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "helpinghand",
+      "name": "Helping Hand",
+      "description": "Knock Giggle off another player's face.",
+      "location": "The Mines",
+      "image": "assets/badges/helpinghand",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "trickshot",
+      "name": "Trickshot",
+      "description": "Stun Giggle with a Glowstick.",
+      "location": "The Mines",
+      "image": "assets/badges/trickshot",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "tradeoffer",
+      "name": "Trade Offer",
+      "description": "Give an item to Louie in exchange for something.",
+      "location": "The Mines",
+      "image": "assets/badges/tradeoffer",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "sshh",
+      "name": "Sshh!",
+      "description": "Escape Figure and complete the Library puzzle.",
+      "location": "The Hotel, Door 50",
+      "image": "assets/badges/sshh",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "supportingsmallbusinesses",
+      "name": "Supporting Small Businesses",
+      "description": "Purchase an item from Jeff.",
+      "location": "The Hotel / The Mines",
+      "image": "assets/badges/supportingsmallbusinesses",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "plsdonate",
+      "name": "Pls Donate",
+      "description": "Put 100 Gold into Jeff's tip jar.",
+      "location": "Jeff Shop",
+      "image": "assets/badges/plsdonate",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "itstaresback",
+      "name": "It Stares Back",
+      "description": "Encounter the Void.",
+      "location": "Multiplayer subfloors",
+      "image": "assets/badges/itstaresback",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "meettimothy",
+      "name": "Meet Timothy",
+      "description": "Encounter Timothy while looting.",
+      "location": "The Hotel / The Mines",
+      "image": "assets/badges/meettimothy",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "error",
+      "name": "Error",
+      "description": "Encounter Glitch.",
+      "location": "Any floor",
+      "image": "assets/badges/error",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "meetjack",
+      "name": "Meet Jack",
+      "description": "Encounter Jack in a hiding spot or entrance.",
+      "location": "The Hotel / The Mines",
+      "image": "assets/badges/meetjack",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "trialanderror",
+      "name": "Trial and Error",
+      "description": "Encounter and survive an activated Glitch Fragment.",
+      "location": "Subfloors",
+      "image": "assets/badges/trialanderror",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "witnessprotection",
+      "name": "Witness Protection",
+      "description": "Resist looking at Alma.",
+      "location": "The Archives",
+      "image": "assets/badges/witnessprotection",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "limitlesspaper",
+      "name": "Limitless Paper",
+      "description": "Survive Scribbles.",
+      "location": "The Archives",
+      "image": "assets/badges/limitlesspaper",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "crowdwatching",
+      "name": "Crowd Watching",
+      "description": "Survive a Drone stampede.",
+      "location": "The Archives",
+      "image": "assets/badges/crowdwatching",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "perfectmemory",
+      "name": "Perfect Memory",
+      "description": "Survive Forget-Me-Nots.",
+      "location": "The Archives",
+      "image": "assets/badges/perfectmemory",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "carpetburn",
+      "name": "Carpet Burn",
+      "description": "Survive Bash.",
+      "location": "The Archives",
+      "image": "assets/badges/carpetburn",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "nowserved",
+      "name": "Now Served",
+      "description": "Survive Teller.",
+      "location": "The Archives",
+      "image": "assets/badges/nowserved",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "shockhazard",
+      "name": "Shock Hazard",
+      "description": "Survive a Currents hazard.",
+      "location": "The Archives",
+      "image": "assets/badges/shockhazard",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "fiharefriends",
+      "name": "Fih Are Friends",
+      "description": "Feed the Fih.",
+      "location": "The Archives",
+      "image": "assets/badges/fiharefriends",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "firewall",
+      "name": "Firewall",
+      "description": "Avoid or disable Ransom.",
+      "location": "The Archives",
+      "image": "assets/badges/firewall",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "mostvaluableemployee",
+      "name": "Most Valuable Employee",
+      "description": "Successfully organize the Mail Room.",
+      "location": "The Archives",
+      "image": "assets/badges/mostvaluableemployee",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "itsstillyou",
+      "name": "It's Still You",
+      "description": "Stare at your reflection for too long.",
+      "location": "The Archives",
+      "image": "assets/badges/itsstillyou",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "smashingdeal",
+      "name": "Smashing Deal",
+      "description": "Bargain with Portrait.",
+      "location": "The Archives",
+      "image": "assets/badges/smashingdeal",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "whoami",
+      "name": "Who Am I?",
+      "description": "Try to remember while interacting with the mysterious Archives area.",
+      "location": "The Archives, S-050",
+      "image": "assets/badges/whoami",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "paparazzi",
+      "name": "Paparazzi",
+      "description": "Scare off a large spectator, Creak.",
+      "location": "The Stairwell",
+      "image": "assets/badges/paparazzi",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "bubblepopping",
+      "name": "Bubble Popping",
+      "description": "Pop a Stem by throwing it.",
+      "location": "The Stairwell",
+      "image": "assets/badges/bubblepopping",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "hellowalker",
+      "name": "Hello Walker",
+      "description": "Meet the strange hooded creature in the Stairwell.",
+      "location": "The Stairwell",
+      "image": "assets/badges/hellowalker",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "congaline",
+      "name": "Conga Line",
+      "description": "Have three Noise instances follow you at once.",
+      "location": "The Stairwell",
+      "image": "assets/badges/congaline",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "abonetopick",
+      "name": "A Bone To Pick",
+      "description": "Open a Skull Lock using a Skeleton Key.",
+      "location": "The Hotel / The Mines",
+      "image": "assets/badges/abonetopick",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "improvise",
+      "name": "Improvise",
+      "description": "Use a Lockpick on a Generator instead of a Fuse.",
+      "location": "The Hotel",
+      "image": "assets/badges/improvise",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "youfinallyturngreen",
+      "name": "You Finally Turn Green",
+      "description": "Drink Gween Soda and turn green.",
+      "location": "The Mines",
+      "image": "assets/badges/youfinallyturngreen",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "doh",
+      "name": "D'oh!",
+      "description": "Find and eat the Donut in the Rift Cafe.",
+      "location": "The Hotel",
+      "image": "assets/badges/doh",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "enlightened",
+      "name": "Enlightened",
+      "description": "Fill your hotbar with light sources.",
+      "location": "Any floor",
+      "image": "assets/badges/enlightened",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "girldinner",
+      "name": "Girl Dinner",
+      "description": "Fill your hotbar with edible items.",
+      "location": "Any floor",
+      "image": "assets/badges/girldinner",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "pizzatime",
+      "name": "Pizza Time",
+      "description": "Fill your hotbar entirely with Pizza.",
+      "location": "The Archives",
+      "image": "assets/badges/pizzatime",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "badluck",
+      "name": "Bad Luck",
+      "description": "Use a Pocket Mirror to beckon Portrait.",
+      "location": "The Archives",
+      "image": "assets/badges/badluck",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "goldstandard",
+      "name": "Gold Standard",
+      "description": "Find and use a Honey Pot.",
+      "location": "The Archives",
+      "image": "assets/badges/goldstandard",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "supersizeme",
+      "name": "Super-Size Me",
+      "description": "Obtain a Jug of Starlight.",
+      "location": "The Stairwell / The Rooms",
+      "image": "assets/badges/supersizeme",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "plugandplay",
+      "name": "Plug & Play",
+      "description": "Install a module into a scanner.",
+      "location": "The Stairwell",
+      "image": "assets/badges/plugandplay",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "emancipationcustomization",
+      "name": "Emancipation Customization",
+      "description": "Place a peculiar hat on a distinguished individual.",
+      "location": "The Stairwell",
+      "image": "assets/badges/emancipationcustomization",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "flashpoint",
+      "name": "Flash Point",
+      "description": "Light a Flare in under one second.",
+      "location": "The Stairwell",
+      "image": "assets/badges/flashpoint",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "rockbottom",
+      "name": "Rock Bottom",
+      "description": "Escape The Hotel.",
+      "location": "The Hotel",
+      "image": "assets/badges/rockbottom",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "detour",
+      "name": "Detour",
+      "description": "Enter a subfloor and receive its acknowledgment.",
+      "location": "Any subfloor",
+      "image": "assets/badges/detour",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "aroundback",
+      "name": "Around Back",
+      "description": "Enter The Backdoor.",
+      "location": "The Backdoor",
+      "image": "assets/badges/aroundback",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "otherwayaround",
+      "name": "Other Way Around",
+      "description": "Escape The Backdoor.",
+      "location": "The Backdoor",
+      "image": "assets/badges/otherwayaround",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "seeyousoon",
+      "name": "See You Soon",
+      "description": "Escape The Mines.",
+      "location": "The Mines",
+      "image": "assets/badges/seeyousoon",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "touchedgrass",
+      "name": "Touched Grass",
+      "description": "Enter The Outdoors through The Hotel.",
+      "location": "The Outdoors",
+      "image": "assets/badges/touchedgrass",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "downthewaterspout",
+      "name": "Down The Water Spout",
+      "description": "Escape The Outdoors.",
+      "location": "The Outdoors",
+      "image": "assets/badges/downthewaterspout",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "forgottenmemories",
+      "name": "Forgotten Memories",
+      "description": "Enter The Archives.",
+      "location": "The Archives",
+      "image": "assets/badges/forgottenmemories",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "emergencyexit",
+      "name": "Emergency Exit",
+      "description": "Escape The Archives through an Emergency Exit.",
+      "location": "The Archives",
+      "image": "assets/badges/emergencyexit",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "z50",
+      "name": "Z-50",
+      "description": "Escape The Archives at Z-50.",
+      "location": "The Archives, Z-50",
+      "image": "assets/badges/z50",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "goingdown",
+      "name": "Going Down",
+      "description": "Enter The Stairwell.",
+      "location": "The Stairwell",
+      "image": "assets/badges/goingdown",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "goingup",
+      "name": "Going Up",
+      "description": "Escape The Stairwell.",
+      "location": "The Stairwell",
+      "image": "assets/badges/goingup",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "stairmaster",
+      "name": "Stair Master",
+      "description": "Loop The Stairwell.",
+      "location": "The Stairwell",
+      "image": "assets/badges/stairmaster",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "evilbegone",
+      "name": "Evil Be Gone",
+      "description": "Successfully use a Crucifix.",
+      "location": "Any applicable floor",
+      "image": "assets/badges/evilbegone",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "stayoutofmyway",
+      "name": "Stay Out Of My Way",
+      "description": "Use a Crucifix against Rush.",
+      "location": "The Hotel / The Mines",
+      "image": "assets/badges/stayoutofmyway",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "unbound",
+      "name": "Unbound",
+      "description": "Use a Crucifix against Ambush.",
+      "location": "The Hotel / The Mines",
+      "image": "assets/badges/unbound",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "takeabreather",
+      "name": "Take A Breather",
+      "description": "Use a Crucifix against Seek.",
+      "location": "The Hotel / The Mines",
+      "image": "assets/badges/takeabreather",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "allfiguredout",
+      "name": "All Figured Out",
+      "description": "Use a Crucifix against Figure.",
+      "location": "The Hotel",
+      "image": "assets/badges/allfiguredout",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "youcantseeme",
+      "name": "You Can't See Me",
+      "description": "Use a Crucifix against Eyes.",
+      "location": "The Hotel / The Mines",
+      "image": "assets/badges/youcantseeme",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "ihateyou",
+      "name": "I Hate You",
+      "description": "Use a Crucifix against Screech.",
+      "location": "The Hotel / The Mines",
+      "image": "assets/badges/ihateyou",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "twostepsahead",
+      "name": "Two Steps Ahead",
+      "description": "Use a Crucifix against Halt.",
+      "location": "The Hotel",
+      "image": "assets/badges/twostepsahead",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "outwitted",
+      "name": "Outwitted",
+      "description": "Use a Crucifix against Dupe.",
+      "location": "The Hotel / The Mines",
+      "image": "assets/badges/outwitted",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "itsnotmytime",
+      "name": "It's Not My Time",
+      "description": "Use a Crucifix against Dread.",
+      "location": "Applicable floor",
+      "image": "assets/badges/itsnotmytime",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "bugzapper",
+      "name": "Bug Zapper",
+      "description": "Use a Crucifix against Timothy.",
+      "location": "The Hotel / The Mines",
+      "image": "assets/badges/bugzapper",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "lostinthedark",
+      "name": "Lost In The Dark",
+      "description": "Use a Crucifix against Void.",
+      "location": "Multiplayer subfloors",
+      "image": "assets/badges/lostinthedark",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "undernewmanagement",
+      "name": "Under New Management",
+      "description": "Use a Crucifix against Hide.",
+      "location": "The Hotel / The Mines",
+      "image": "assets/badges/undernewmanagement",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "redmist",
+      "name": "Red Mist",
+      "description": "Use a Crucifix against A-60.",
+      "location": "Rooms entities via modifiers",
+      "image": "assets/badges/redmist",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "grinreaper",
+      "name": "Grin Reaper",
+      "description": "Use a Crucifix against A-120.",
+      "location": "Rooms entities via modifiers",
+      "image": "assets/badges/grinreaper",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "redlight",
+      "name": "Red Light",
+      "description": "Use a Crucifix against Blitz through the appropriate modifier.",
+      "location": "The Backdoor via modifier",
+      "image": "assets/badges/redlight",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "lookmannolooking",
+      "name": "Lookman No Looking",
+      "description": "Use a Crucifix against Lookman through the appropriate modifier.",
+      "location": "The Backdoor via modifier",
+      "image": "assets/badges/lookmannolooking",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "timeout",
+      "name": "Time Out",
+      "description": "Use a Crucifix against Haste through the appropriate modifier.",
+      "location": "The Backdoor via modifier",
+      "image": "assets/badges/timeout",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "bugbomb",
+      "name": "Bug Bomb",
+      "description": "Use a Crucifix against a Gloombat swarm.",
+      "location": "The Mines",
+      "image": "assets/badges/bugbomb",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "notfunny",
+      "name": "Not Funny",
+      "description": "Use a Crucifix against Giggle.",
+      "location": "The Mines",
+      "image": "assets/badges/notfunny",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "thebiggertheyare",
+      "name": "The Bigger They Are",
+      "description": "Use a Crucifix against Grumble.",
+      "location": "The Mines",
+      "image": "assets/badges/thebiggertheyare",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "queensgambit",
+      "name": "Queen's Gambit",
+      "description": "Use a Crucifix against Queen Grumble.",
+      "location": "The Mines",
+      "image": "assets/badges/queensgambit",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "scammed",
+      "name": "Scammed",
+      "description": "Give Louie a Crucifix.",
+      "location": "The Mines",
+      "image": "assets/badges/scammed",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "playtimesover",
+      "name": "Playtime's Over",
+      "description": "Use a Crucifix against Sally.",
+      "location": "The Hotel",
+      "image": "assets/badges/playtimesover",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "annihilation",
+      "name": "Annihilation",
+      "description": "Banish Portrait with a Crucifix.",
+      "location": "The Archives",
+      "image": "assets/badges/annihilation",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "notfivestars",
+      "name": "Not Five Stars",
+      "description": "Escape The Hotel with at least a 50% Modifier bonus.",
+      "location": "The Hotel",
+      "image": "assets/badges/notfivestars",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "hotelhell",
+      "name": "Hotel Hell",
+      "description": "Escape The Hotel with at least a 150% Modifier bonus.",
+      "location": "The Hotel",
+      "image": "assets/badges/hotelhell",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "rockyroad",
+      "name": "Rocky Road",
+      "description": "Escape The Mines with at least a 50% Modifier bonus.",
+      "location": "The Mines",
+      "image": "assets/badges/rockyroad",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "ahardplace",
+      "name": "A Hard Place",
+      "description": "Escape The Mines with at least a 150% Modifier bonus.",
+      "location": "The Mines",
+      "image": "assets/badges/ahardplace",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "staremployee",
+      "name": "Star Employee",
+      "description": "Organize the Mail Room after giving Honcho something it should not have.",
+      "location": "The Archives",
+      "image": "assets/badges/staremployee",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "storagewars",
+      "name": "Storage Wars",
+      "description": "Bargain 3000 Gold from the hooded figure.",
+      "location": "The Stairwell",
+      "image": "assets/badges/storagewars",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "winner",
+      "name": "Winner",
+      "description": "Win a BATTLE Mode round in first place.",
+      "location": "BATTLE Mode",
+      "image": "assets/badges/winner",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "winnerwinner",
+      "name": "Winner Winner",
+      "description": "Win 10 BATTLE Mode rounds.",
+      "location": "BATTLE Mode",
+      "image": "assets/badges/winnerwinner",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "inplainsight2",
+      "name": "In Plain Sight 2",
+      "description": "Win BATTLE Mode in first place without hiding.",
+      "location": "BATTLE Mode",
+      "image": "assets/badges/inplainsight2",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "pointers",
+      "name": "Pointers",
+      "description": "Gain 2500 points in one BATTLE Mode round.",
+      "location": "BATTLE Mode",
+      "image": "assets/badges/pointers",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "highroller",
+      "name": "High Roller",
+      "description": "Gain 5000 points in one BATTLE Mode round.",
+      "location": "BATTLE Mode",
+      "image": "assets/badges/highroller",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "atriple",
+      "name": "A Triple",
+      "description": "Eliminate three other players in one BATTLE Mode round; assists count.",
+      "location": "BATTLE Mode",
+      "image": "assets/badges/atriple",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "partywipe",
+      "name": "Party Wipe",
+      "description": "Eliminate seven other players in one BATTLE Mode round; assists count.",
+      "location": "BATTLE Mode",
+      "image": "assets/badges/partywipe",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "finderskeepers",
+      "name": "Finders Keepers",
+      "description": "Eliminate a player by stealing a nearby hiding spot.",
+      "location": "BATTLE Mode",
+      "image": "assets/badges/finderskeepers",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "theonewhodealtit",
+      "name": "The One Who Dealt It",
+      "description": "Eliminate a player by triggering Firedamp.",
+      "location": "BATTLE Mode",
+      "image": "assets/badges/theonewhodealtit",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "ringout",
+      "name": "Ring Out",
+      "description": "Knock a player out of bounds with Boxing Gloves.",
+      "location": "BATTLE Mode",
+      "image": "assets/badges/ringout",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "potassiumpower",
+      "name": "Potassium Power",
+      "description": "Make at least two players slip on your Nanner Peel.",
+      "location": "BATTLE Mode",
+      "image": "assets/badges/potassiumpower",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "battler",
+      "name": "Battler",
+      "description": "Eliminate 100 players in BATTLE Mode in total.",
+      "location": "BATTLE Mode",
+      "image": "assets/badges/battler",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "machinelearning",
+      "name": "MACHINE LEARNING",
+      "description": "Win any Daily Run; retries count.",
+      "location": "Daily Runs",
+      "image": "assets/badges/machinelearning",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "cleanrun",
+      "name": "CLEAN RUN",
+      "description": "Win any Daily Run on your first attempt.",
+      "location": "Daily Runs",
+      "image": "assets/badges/cleanrun",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "parallelprocessing",
+      "name": "PARALLEL PROCESSING",
+      "description": "Win a Daily Run with other players; retries count.",
+      "location": "Daily Runs",
+      "image": "assets/badges/parallelprocessing",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "lowlatency",
+      "name": "LOW LATENCY",
+      "description": "Win a Daily Run in under five minutes; retries count.",
+      "location": "Daily Runs",
+      "image": "assets/badges/lowlatency",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "uptime",
+      "name": "UPTIME",
+      "description": "Maintain a Daily Run streak for seven days.",
+      "location": "Daily Runs",
+      "image": "assets/badges/uptime",
+      "notes": "",
+      "secret": false
+    },
+    {
+      "id": "everythingeverywhereallatonce",
+      "name": "Everything Everywhere All At Once",
+      "description": "Escape The Hotel in the CHAOS Vision.",
+      "location": "CHAOS Vision",
+      "image": "assets/badges/everythingeverywhereallatonce",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "truertowerhero",
+      "name": "Truer Tower Hero",
+      "description": "Defeat Bramble on Hard Mode in the Tower Heroes x DOORS event.",
+      "location": "Tower Heroes x DOORS",
+      "image": "assets/badges/truertowerhero",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "weouthere",
+      "name": "We Out Here",
+      "description": "Complete The Outdoors Story Quest in the Tower Heroes x DOORS event.",
+      "location": "Tower Heroes x DOORS",
+      "image": "assets/badges/weouthere",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "towerhero",
+      "name": "Tower Hero",
+      "description": "Complete El Goblino's Quest in the Tower Heroes x DOORS event.",
+      "location": "Tower Heroes x DOORS",
+      "image": "assets/badges/towerhero",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "truetowerhero",
+      "name": "True Tower Hero",
+      "description": "Complete The Library on Hard in the Tower Heroes x DOORS event.",
+      "location": "Tower Heroes x DOORS",
+      "image": "assets/badges/truetowerhero",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "hoteladventurer",
+      "name": "Hotel Adventurer",
+      "description": "Complete The Hotel in Adventure Mode in the Tower Heroes x DOORS event.",
+      "location": "Tower Heroes x DOORS",
+      "image": "assets/badges/hoteladventurer",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "voidbuster",
+      "name": "Void Buster",
+      "description": "Defeat Void in the Tower Heroes x DOORS event.",
+      "location": "Tower Heroes x DOORS",
+      "image": "assets/badges/voidbuster",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "youreit",
+      "name": "You're It",
+      "description": "Play one round of the untitled tag game in the Courtyard map.",
+      "location": "Collab / Tag Game",
+      "image": "assets/badges/youreit",
+      "notes": "",
+      "secret": true
+    },
+    {
+      "id": "certifiedrushfan",
+      "name": "CERTIFIED RUSH FAN",
+      "description": "Beat RUSH MODE.",
+      "location": "RUSH MODE",
+      "image": "assets/badges/certifiedrushfan",
+      "notes": "Currently unobtainable; event/vision is no longer generally available.",
+      "secret": true
+    },
+    {
+      "id": "trickortreat",
+      "name": "Trick Or Treat!",
+      "description": "Knock on 30 Treater doors during Trick or Treat 2025.",
+      "location": "Trick or Treat 2025",
+      "image": "assets/badges/trickortreat",
+      "notes": "Currently unobtainable; event ended.",
+      "secret": true
+    },
+    {
+      "id": "farfromhome",
+      "name": "Far From Home",
+      "description": "Reach Room 50 in Trick or Treat 2025.",
+      "location": "Trick or Treat 2025",
+      "image": "assets/badges/farfromhome",
+      "notes": "Currently unobtainable; event ended.",
+      "secret": true
+    },
+    {
+      "id": "goodhaul",
+      "name": "Good Haul",
+      "description": "Purchase all Store items with Candy in Trick or Treat 2025.",
+      "location": "Trick or Treat 2025",
+      "image": "assets/badges/goodhaul",
+      "notes": "Currently unobtainable; event ended.",
+      "secret": true
+    },
+    {
+      "id": "sugarrush",
+      "name": "Sugar Rush",
+      "description": "Eat 100 Candy during Trick or Treat 2024.",
+      "location": "Trick or Treat 2024",
+      "image": "assets/badges/sugarrush",
+      "notes": "Currently unobtainable; event ended.",
+      "secret": true
+    },
+    {
+      "id": "sugarcrash",
+      "name": "Sugar Crash",
+      "description": "Eat 500 Candy during Trick or Treat 2024.",
+      "location": "Trick or Treat 2024",
+      "image": "assets/badges/sugarcrash",
+      "notes": "Currently unobtainable; event ended.",
+      "secret": true
+    },
+    {
+      "id": "silentnight",
+      "name": "Silent Night",
+      "description": "Complete Cringle's Workshop during the 2025 holidays.",
+      "location": "Cringle's Workshop",
+      "image": "assets/badges/silentnight",
+      "notes": "Currently unobtainable; holiday vision ended.",
+      "secret": true
+    },
+    {
+      "id": "holidayspirit",
+      "name": "Holiday Spirit",
+      "description": "Gift something from the Store with Robux during the 2025 holidays.",
+      "location": "2025 Holiday Event",
+      "image": "assets/badges/holidayspirit",
+      "notes": "Currently unobtainable; event ended.",
+      "secret": true
+    },
+    {
+      "id": "doublefeature",
+      "name": "Double Feature",
+      "description": "Escape The Hotel and The Mines under the event restrictions.",
+      "location": "Twitch Bloxfest",
+      "image": "assets/badges/doublefeature",
+      "notes": "Currently unobtainable; event ended.",
+      "secret": true
+    },
+    {
+      "id": "hardstuck",
+      "name": "Hardstuck",
+      "description": "Reach STARTER rank in RANKED.",
+      "location": "RANKED",
+      "image": "assets/badges/hardstuck",
+      "notes": "Current availability may depend on RANKED being enabled.",
+      "secret": true
+    },
+    {
+      "id": "roomy",
+      "name": "Roomy",
+      "description": "Enter The Rooms.",
+      "location": "The Rooms",
+      "image": "assets/badges/roomy",
+      "notes": "Currently unobtainable. The Rooms was replaced by The Archives and later returned as a Vision without its old badges.",
+      "secret": true
+    },
+    {
+      "id": "backontrack",
+      "name": "Back On Track",
+      "description": "Escape The Rooms.",
+      "location": "The Rooms",
+      "image": "assets/badges/backontrack",
+      "notes": "Currently unobtainable. Legacy Rooms achievement.",
+      "secret": true
+    },
+    {
+      "id": "a1000",
+      "name": "A-1000",
+      "description": "Reach the end of The Rooms.",
+      "location": "The Rooms, A-1000",
+      "image": "assets/badges/a1000",
+      "notes": "Currently unobtainable. Legacy secret Rooms achievement.",
       "secret": true
     }
   ]
