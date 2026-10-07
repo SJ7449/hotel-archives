@@ -1,12 +1,23 @@
 {
-  "id": "ambush",
-  "name": "Ambush",
-  "description": "[PLACEHOLDER — add description]",
-  "journalDescription": "[PLACEHOLDER — in-game journal text]",
-  "behavior": "[PLACEHOLDER]",
-  "warningSigns": "[PLACEHOLDER]",
-  "howToSurvive": "[PLACEHOLDER]",
-  "locations": [],
-  "floor": "",
-  "image": "assets/entities/ambush.png"
+
+"id": "ambush",
+
+"name": "Ambush",
+
+"description": "[Ambush is a randomly spawning entity that replaces Rush. Although this entity rebounds and is faster than the typical Rush making the difficulty exceed what a beginner expects.]",
+
+"journalDescription": "[Bright green ghostly face. Hiding is important. This thing goes back and forth sometimes to double check hiding spots. Have to make sure I'm ready to hide again, while being careful about the monster in the closet. Ambush is extremely loud and always screaming.]",
+
+"behavior": "[Extremely Aggressive. Rebounds multiple times to search for the player. Moves faster than Rush.]",
+
+"warningSigns": "[The lights will flicker, or in dark rooms you will need to be careful for his screaming.]",
+
+"howToSurvive": "[You need to constantly get in and out of closets, however in The Mines you will have to switch between two lockers to prevent Hide attacking.]",
+
+"locations": "[The Hotel]",
+
+"floor": "The Hotel",
+
+"image": "assets/entities/ambush.jpg"
+
 }
