@@ -11,6 +11,15 @@
     if (m.noKnobs) L.push({ t: 'No Knobs', c: 'warn' });
     return L;
   };
+  /* Optional "section": modifiers sharing a section are mutually exclusive (only one can be picked).
+     Missing, empty, or "null" = no restriction. Reused by the Run Customizer. */
+  App.modSection = m => { const s = String(m.section ?? '').trim(); return !s || s.toLowerCase() === 'null' ? null : s; };
+  App.toggleMod = (set, id) => {
+    if (set.has(id)) return set.delete(id);
+    const m = App.data.modifiers.find(x => x.id === id), s = m && App.modSection(m);
+    if (s) App.data.modifiers.forEach(x => { if (x.id !== id && App.modSection(x) === s) set.delete(x.id); });
+    set.add(id);
+  };
   App.knobTotal = ids => {
     const mods = ids.map(id => App.data.modifiers.find(m => m.id === id)).filter(Boolean);
     const known = mods.filter(m => typeof m.knobPercent === 'number'), mode = App.data.knobCombine;
@@ -21,8 +30,8 @@
   const ok = m => ({ all: 1, pos: m.knobPercent > 0, neg: m.knobPercent < 0, prog: m.noProgression, rift: m.noRifts, knob: m.noKnobs }[flt]) &&
     `${m.name} ${m.description} ${m.changes}`.toLowerCase().includes(q);
   const detail = m => !m ? '<p class="muted">Hover or select a modifier to see its details.</p>' : `<h3>${e(m.name)}</h3><div>${tags(m)}</div>
-    <h4>Description</h4><p>${F(m.description)}</p><h4>What it changes</h4><p>${F(m.changes)}</p><p class="mono">Knob modifier: ${typeof m.knobPercent === 'number' ? m.knobPercent + '%' : 'unknown'}</p>`;
-  const list = () => App.data.modifiers.filter(ok).map(m => `<button class="mod${sel.has(m.id) ? ' on' : ''}" data-id="${e(m.id)}" aria-pressed="${sel.has(m.id)}">
+    ${App.modSection(m) ? `<p class="mono">Section: ${e(App.modSection(m))} (only one allowed)</p>` : ''}<h4>Description</h4><p>${F(m.description)}</p><h4>What it changes</h4><p>${F(m.changes)}</p><p class="mono">Knob modifier: ${typeof m.knobPercent === 'number' ? m.knobPercent + '%' : 'unknown'}</p>`;
+  const list = () => App.data.modifiers.filter(ok).map(m => `<button class="mod${sel.has(m.id) ? ' on' : ''}" data-id="${e(m.id)}" aria-pressed="${sel.has(m.id)}"${App.modSection(m) ? ` title="Section: ${e(App.modSection(m))} (one per section)"` : ''}>
     <strong>${e(m.name)}</strong><span>${tags(m)}</span></button>`).join('') || '<p class="muted">No matching modifiers.</p>';
   const bar = () => { const k = App.knobTotal([...sel]);
     return `<div class="mod-bar"><span>${sel.size} selected</span><strong>Total Knob modifier: ${k.noKnobs ? 'No Knobs' : (k.total > 0 ? '+' : '') + k.total + '%'}</strong>
@@ -37,7 +46,7 @@
         document.querySelectorAll('#flt button').forEach(x => x.classList.toggle('on', x === b)); draw(); };
       const show = ev => { const b = ev.target.closest('.mod'); if (b) D.innerHTML = detail(find(b.dataset.id)); };
       L.onmouseover = L.onfocusin = show;
-      L.onclick = ev => { const b = ev.target.closest('.mod'); if (!b) return; sel.has(b.dataset.id) ? sel.delete(b.dataset.id) : sel.add(b.dataset.id); draw(); show(ev); };
+      L.onclick = ev => { const b = ev.target.closest('.mod'); if (!b) return; App.toggleMod(sel, b.dataset.id); draw(); show(ev); };
       document.getElementById('clear').onclick = () => { sel.clear(); draw(); };
       draw();
     };
